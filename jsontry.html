@@ -1,0 +1,71 @@
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+
+<script>
+
+    $(function() {
+
+
+   var people = [];
+
+   $.getJSON('output.json', function(data) {
+       $.each(data.MovieIndian, function(i, f) {
+          var tblRow = "<tr>" + "<td>" + (i+1) + "</td>" + "<td>" + f.title + "</td>" +
+           "<td>" + f.rating + "</td>" +"<td><img src=" + f.link1+ " height='100dp'></td>" + "</td>" +"<td><a href=http://www.imdb.com" + f.links+ " > click </a></td>" +  "</tr>"
+           $(tblRow).appendTo("#userdata tbody");
+     });
+
+   });
+
+});
+</script>
+</head>
+
+<body>
+
+<div class="wrapper">
+<div class="profile">
+   <table id= "userdata" border="2">
+  <thead>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email Address</th>
+            <th>City</th>
+            <th>City</th>
+        </thead>
+      <tbody>
+
+       </tbody>
+   </table>
+
+</div>
+</div>
+
+</body>
+</html>
+<!--
+<!doctype html>
+<html>
+    <head>
+        <script type="text/javascript" src="abc.json"></script>
+             <script type="text/javascript" >
+                function load() {
+                     var mydata = JSON.parse(data);
+                     alert(mydata.length);
+
+                     var div = document.getElementById('data');
+
+                     for(var i = 0;i < mydata.length; i++)
+                     {
+                        div.innerHTML = div.innerHTML + "<p class='inner' id="+i+">"+ mydata[i].title +"</p>" + "<br>";
+                     }
+                 }
+        </script>
+    </head>
+    <body onload="load()">
+    <div id= "data">
+
+    </div>
+    </body>
+</html>-->

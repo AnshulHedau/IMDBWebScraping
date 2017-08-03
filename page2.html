@@ -1,0 +1,76 @@
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+
+<script>
+
+    $(function() {
+
+
+   var people = [];
+
+   $.getJSON('output.json', function(data) {
+       $.each(data.MovieIndian, function(i, f) {
+           
+                                        var tblRow = "<tr>" + "<td>" + i + "</td>" + "<td>" + f.title + "</td>" +
+           "<td>" + f.rating + "</td>" + "</tr>"
+//                                        var tblRow = "<tr>" + "<td>" + i + "</td>" + "<td>" +table01 + "</td>" +
+//           "<td>" + f.rating + "</td>" + "</tr>"
+//           $(tblRow).appendTo("#userdata tbody");
+//                                //json.release = release;
+                            })
+
+                        }
+                    })
+          
+           $(tblRow).appendTo("#userdata tbody");
+     });
+
+   });
+
+});
+</script>
+</head>
+
+<body>
+
+<div class="wrapper">
+<div class="profile">
+   <table id= "userdata" border="2">
+  <thead>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email Address</th>
+            <th>City</th>
+        </thead>
+      <tbody>
+
+       </tbody>
+   </table>
+
+</div>
+</div>
+
+</body>
+</html>
+
+//          url = 'http://www.imdb.com'+f.links;
+//                    request(url, function(error, response, html){
+//                        if(!error){
+//                            var $ = cheerio.load(html);
+//
+//                            var title;
+//                            $('.summary_text').filter(function(){
+//                                var data = $(this);
+//
+//                                        title01 = data.text();
+//                                        console.log(title);
+//                                        var tblRow = "<tr>" + "<td>" + i + "</td>" + "<td>" +table01 + "</td>" +
+//           "<td>" + f.rating + "</td>" + "</tr>"
+//           $(tblRow).appendTo("#userdata tbody");
+//                                //json.release = release;
+//                            })
+//
+//                        }
+//                    })
+

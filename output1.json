@@ -1,0 +1,69 @@
+{
+    "MovieIndian": [
+        {
+            "name": "12 Angry Men",
+            "rating10": "178834",
+            "rating9": "166236",
+            "rating8": "96561",
+            "rating7": "33575",
+            "rating6": "9694",
+            "rating5": "4349",
+            "rating4": "1863",
+            "rating3": "1278",
+            "rating2": "1171",
+            "rating1": "6974"
+        },
+        {
+            "name": "The Godfather",
+            "rating10": "661999",
+            "rating9": "304725",
+            "rating8": "146656",
+            "rating7": "57869",
+            "rating6": "21960",
+            "rating5": "12667",
+            "rating4": "6283",
+            "rating3": "4961",
+            "rating2": "4843",
+            "rating1": "33638"
+        },
+        {
+            "name": "The Godfather: Part II",
+            "rating10": "382980",
+            "rating9": "245635",
+            "rating8": "129045",
+            "rating7": "50774",
+            "rating6": "18141",
+            "rating5": "9370",
+            "rating4": "4435",
+            "rating3": "3395",
+            "rating2": "3114",
+            "rating1": "17836"
+        },
+        {
+            "name": "The Dark Knight",
+            "rating10": "825488",
+            "rating9": "507752",
+            "rating8": "274866",
+            "rating7": "107162",
+            "rating6": "37526",
+            "rating5": "18123",
+            "rating4": "8623",
+            "rating3": "6348",
+            "rating2": "5700",
+            "rating1": "26799"
+        },
+        {
+            "name": "The Shawshank Redemption",
+            "rating10": "1027641",
+            "rating9": "462828",
+            "rating8": "207521",
+            "rating7": "67207",
+            "rating6": "20241",
+            "rating5": "10196",
+            "rating4": "4774",
+            "rating3": "3743",
+            "rating2": "3577",
+            "rating1": "30739"
+        }
+    ]
+}
